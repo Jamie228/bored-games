@@ -8,7 +8,8 @@ html,body
     width: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; 
+    overflow-x: hidden;
+    background-color: #b5ffe9; 
 }
 
 /* TYPOGRAPHY */
@@ -21,7 +22,7 @@ h1 {
 
 .hero {
     background-color: #444545;
-    color: white;
+    color: #b5ffe9;
     padding: 30px 30px;
     text-align: center;
     font-size: 30px;
