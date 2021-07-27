@@ -3,13 +3,30 @@ font-family: 'Chelsea Market', cursive;
 font-family: 'Roboto Slab', serif;
 */
 
+/** 
+===== COLOURS =====
+    Onyx: #444545
+    Aero Blue: #B5FFE9
+    Opal: #C5E0D8
+    Silver: #C9C9C9
+    Silver Pink: #CEABB1
+**/
+
+/* VARIABLES */
+
+* {
+    --onyx: #444545;
+    --aero-blue: #B5FFE9;
+    font-family: 'Roboto Slab', cursive;
+}
+
 html,body
 {
     width: 100%;
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
-    background-color: #b5ffe9; 
+    background-color: #b5ffe9;
 }
 
 /* TYPOGRAPHY */
@@ -20,10 +37,49 @@ h1 {
 
 /* STRUCTURE */
 
+main {
+    padding: 20px;
+}
+
 .hero {
-    background-color: #444545;
-    color: #b5ffe9;
+    background-color: var(--onyx);
+    color: var(--aero-blue);
     padding: 30px 30px;
     text-align: center;
     font-size: 30px;
+}
+
+.random-button-wrap {
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* BUTTONS */
+
+.random-button {
+    text-align: center;
+    background-color: #c17767;
+    color: black;
+    border: none;
+    width: 75%;
+    padding: 20px;
+    font-size: 24px;
+    border-radius: 45px;
+}
+
+#result {
+    text-align: center;
+    max-height: 0;
+    overflow: hidden;
+    font-size: 24px;
+    width: 70%;
+    margin: 0 auto;
+    color: var(--aero-blue);
+    border-radius: 6px;
+}
+
+.expanded {
+    transition: max-height 1s ease-in;
+    background-color: var(--onyx);
+    padding: 20px;
 }
