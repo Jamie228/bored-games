@@ -70,6 +70,7 @@ section h2 {
 
 .game-info div {
     margin: 15px 40px;
+    flex: 1;
 }
 
 .game-info div h2, .game-info div h3 {
