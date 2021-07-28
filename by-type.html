@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A website to search and select board games from a collection.">
+    <meta name="author" content="Jamie Hamilton">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@900&family=Bungee+Shade&family=Chelsea+Market&family=Roboto+Slab:wght@400;900&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/9477a9faa7.js" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    
+    <title>Search by Type</title>
+</head>
+<body>
+    
+    <header class="hero-slim">
+        <h1 id="page-title">Search by Type</h1>
+    </header>
+    <main>
+
+        <div id="result"></div>
+        <div class="random-button-wrap" style="padding-bottom: 20px;">
+            <button class="random-button animated fadeIn slow" id="random-button"><b><i
+                        class="fas fa-random"></i>&nbsp;&nbsp;&nbsp;&nbsp;Pick One!</b></button>
+        </div>
+
+        <table class="center-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Min Players</th>
+                    <th>Max Players</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+
+            </tbody>
+        </table>
+
+        <h3 id="result-count"></h3>
+
+    </main>
+
+    <script src="js/sql-wasm.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/by-type.js"></script>
+</body>
+</html>

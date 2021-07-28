@@ -6,102 +6,136 @@ font-family: 'Roboto Slab', serif;
 /* VARIABLES */
 
 * {
-    --onyx: #444545;
-    --aero-blue: #B5FFE9;
-    --opal: #C5E0D8;
-    --silver: #C9C9C9;
-    --silver-pink: #CEABB1;
-    --copper-red: #C17767;
-    font-family: 'Roboto Slab', cursive;
+  --onyx: #444545;
+  --aero-blue: #b5ffe9;
+  --opal: #c5e0d8;
+  --silver: #c9c9c9;
+  --silver-pink: #ceabb1;
+  --copper-red: #c17767;
+  font-family: "Roboto Slab", cursive;
 }
 
-html,body
-{
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
-    background-color: var(--aero-blue);
+html,
+body {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  background-color: var(--aero-blue);
 }
 
 /* TYPOGRAPHY */
 
 h1 {
-    font-family: 'Grenze Gotisch', cursive;
+  font-family: "Grenze Gotisch", cursive;
+}
+
+#table-title {
+    text-align: center;
+    font-size: 35px;
+}
+
+#result-count {
+    text-align: center;
 }
 
 /* STRUCTURE */
 
+table {
+  border-collapse: collapse;
+  padding: 20px;
+}
+
+th, td {
+  padding: 20px;
+  text-align: left;
+  border-bottom: 1px solid black;
+}
+
+.center-table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 main {
-    padding: 20px;
+  padding: 20px;
 }
 
 section h2 {
-    text-align: center;
-    font-family: 'Grenze Gotisch', cursive;
-    font-size: 40px;
-    margin: 0;
-    color: var(--onyx);
+  text-align: center;
+  font-family: "Grenze Gotisch", cursive;
+  font-size: 40px;
+  margin: 0;
+  color: var(--onyx);
 }
 
 .hero {
+  background-color: var(--onyx);
+  color: var(--aero-blue);
+  padding: 30px 30px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.hero-slim {
     background-color: var(--onyx);
     color: var(--aero-blue);
-    padding: 30px 30px;
-    text-align: center;
-    font-size: 30px;
+    padding: 15px 20px;
+    text-align: left;
+    font-size: 25px;
 }
 
 .random-button-wrap {
-    text-align: center;
-    padding-top: 20px;
+  text-align: center;
+  padding-top: 20px;
 }
 
 .game-info {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .game-info div {
-    margin: 15px 40px;
-    flex: 1;
+  margin: 15px 40px;
+  flex: 1;
 }
 
-.game-info div h2, .game-info div h3 {
-    margin: 0;
+.game-info div h2,
+.game-info div h3 {
+  margin: 0;
 }
 
 /* BUTTONS */
 
 .random-button {
-    text-align: center;
-    background-color: var(--copper-red);
-    color: black;
-    border: none;
-    width: 75%;
-    padding: 20px;
-    font-size: 24px;
-    border-radius: 45px;
+  text-align: center;
+  background-color: var(--copper-red);
+  color: black;
+  border: none;
+  width: 75%;
+  padding: 20px;
+  font-size: 24px;
+  border-radius: 45px;
 }
 
 .random-button:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #result {
-    text-align: center;
-    max-height: 0;
-    overflow: hidden;
-    font-size: 24px;
-    width: 70%;
-    margin: 0 auto;
-    color: var(--aero-blue);
-    border-radius: 6px;
+  text-align: center;
+  max-height: 0;
+  overflow: hidden;
+  font-size: 24px;
+  width: 70%;
+  margin: 0 auto;
+  color: var(--aero-blue);
+  border-radius: 6px;
 }
 
 .expanded {
-    transition: max-height 1s ease-in;
-    background-color: var(--onyx);
-    padding: 20px;
+  transition: max-height 1s ease-in;
+  background-color: var(--onyx);
+  padding: 20px;
 }

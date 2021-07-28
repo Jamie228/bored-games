@@ -1,0 +1,1 @@
+getDatabaseAndType('games.db');
