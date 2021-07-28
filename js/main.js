@@ -65,6 +65,9 @@ function getDatabaseAndType(dbName) {
             var max_players = document.createElement('td');
             max_players.innerText = game[3];
             row.appendChild(max_players);
+            var length = document.createElement('td');
+            length.innerText = game[4];
+            row.appendChild(length);
             table_body.appendChild(row);
         });
       }
