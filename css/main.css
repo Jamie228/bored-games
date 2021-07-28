@@ -39,6 +39,10 @@ h1 {
     text-align: center;
 }
 
+.type-wrap h3 {
+  font-size: 25px;
+}
+
 /* STRUCTURE */
 
 table {
@@ -104,6 +108,33 @@ section h2 {
 .game-info div h2,
 .game-info div h3 {
   margin: 0;
+}
+
+.type-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.type-wrap a {
+  color: var(--onyx);
+  text-decoration: none;
+  flex: 1;
+}
+
+.type-wrap div {
+  padding: 15px;
+  text-align: center;
+  flex: 1;
+  margin: 10px;
+  border: 4px solid var(--copper-red);
+  border-radius: 6px;
+  background-color: #a8ebd6;
+}
+
+.type-wrap a:hover {
+  font-size: larger;
 }
 
 /* BUTTONS */
