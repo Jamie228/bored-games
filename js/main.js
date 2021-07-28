@@ -21,3 +21,22 @@ function getDatabase(dbName) {
         xhr.send();
     });
 }
+
+function randomQuery() {
+    try {
+        var stmt = database.exec('SELECT * FROM games ORDER BY RANDOM() LIMIT 1');
+        return stmt;
+    } catch (err) {
+        return false;
+    }
+}
+
+function getPlayerString(min_players, max_players) {
+    if(max_players && max_players > min_players) {
+        return min_players + " - " + max_players;
+    } else if (max_players && max_players === min_players) {
+        return min_players;
+    } else {
+        return min_players + "+";
+    }
+}
