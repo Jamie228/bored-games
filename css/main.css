@@ -65,11 +65,11 @@ section h2 {
 .game-info {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .game-info div {
-    padding: 15px;
+    margin: 15px 40px;
 }
 
 .game-info div h2, .game-info div h3 {
