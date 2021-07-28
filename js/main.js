@@ -75,7 +75,7 @@ function getDatabaseAndType(dbName) {
 
 function randomQuery() {
   try {
-    var stmt = database.exec("SELECT * FROM games ORDER BY RANDOM() LIMIT 1");
+    var stmt = database.exec("SELECT * FROM games WHERE id > (ABS(RANDOM()) % (SELECT max(id) FROM games)) LIMIT 1");
     return stmt;
   } catch (err) {
     return false;
