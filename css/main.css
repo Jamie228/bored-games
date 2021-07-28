@@ -65,7 +65,7 @@ section h2 {
 .game-info {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .game-info div {

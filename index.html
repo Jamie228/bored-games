@@ -30,39 +30,11 @@
         </div>
     </main>
     <section>
-        <h2>Looking For Something Else?</h2>
+        <h2>Looking For Something Specific?</h2>
     </section>
 
     <script src="js/sql-wasm.js" type="text/javascript"></script>
     <script src="js/main.js" type="text/javascript"></script>
-
-    <script type="text/javascript">
-        getDatabase('games.db');
-
-        var random_button = document.getElementById('random-button');
-        random_button.addEventListener('click', function() {
-            var result = randomQuery();
-            if (result !== false) {
-                var results = document.getElementById('result');
-                console.log(result[0].values);
-                results.innerHTML = "<h2>" + result[0].values[0][1] + "</h2>";
-                game_info_div = document.createElement('div');
-                game_info_div.className = "game-info";
-                players = document.createElement('div');
-                players.innerHTML = '<h2><i class="fas fa-users"></i></h2><h3>' + getPlayerString(result[0].values[0][2], result[0].values[0][3]) + "</h3>";
-                time = document.createElement('div');
-                time.innerHTML = '<h2><i class="fas fa-clock"></i></h2><h3>' + result[0].values[0][4] + "</h3>";
-                type = document.createElement('div');
-                type.innerHTML = '<h2><i class="fas fa-chess"></i></h2><h3>' + result[0].values[0][5] + "</h3>";
-                game_info_div.appendChild(players);
-                game_info_div.appendChild(time);
-                game_info_div.appendChild(type);
-                results.appendChild(game_info_div);
-                results.style.maxHeight = '500px';
-                results.className = "expanded";
-                window.location.hash = 'result';
-            }
-        });
-    </script>
+    <script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>
