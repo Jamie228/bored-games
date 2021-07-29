@@ -15,6 +15,13 @@ font-family: 'Roboto Slab', serif;
   font-family: "Roboto Slab", cursive;
 }
 
+html {
+  box-sizing: border-box;
+}
+*,*::before,*::after {
+  box-sizing: inherit;
+}
+
 html,
 body {
   width: 100%;
@@ -141,6 +148,14 @@ section h2 {
   font-size: larger;
 }
 
+footer {
+  background-color: var(--onyx);
+  padding: 25px;
+  width: 100%;
+  text-align: center;
+  color: lightgray;
+}
+
 /* BUTTONS */
 
 .random-button {
@@ -173,4 +188,11 @@ section h2 {
   transition: max-height 1s ease-in;
   background-color: var(--onyx);
   padding: 20px;
+}
+
+/* WAVE */
+.wave {
+  display: block;
+  margin-bottom: -5px;
+  z-index: -1;
 }

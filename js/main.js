@@ -17,6 +17,7 @@ function getDatabase(dbName) {
         var db = new SQL.Database(uInt8Array);
         console.log(db);
         database = db;
+        populateFooterCount();
       }
     };
     xhr.send();
@@ -96,5 +97,22 @@ function getPlayerString(min_players, max_players) {
     return min_players;
   } else {
     return min_players + "+";
+  }
+}
+
+function getAllRecords() {
+  try {
+    var result = database.exec("SELECT * FROM games");
+    return result;
+  } catch (err) {
+    return false;
+  }
+}
+
+function populateFooterCount() {
+  const footer_paragraph = document.getElementById('db-count');
+  var result = getAllRecords();
+  if (result !== false) {
+    footer_paragraph.innerHTML = "<b>Number of Games: </b>" + result[0].values.length;
   }
 }
