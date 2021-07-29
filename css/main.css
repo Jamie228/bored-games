@@ -50,6 +50,15 @@ h1 {
   font-size: 25px;
 }
 
+header a h4 {
+  margin: 10px;
+  color: var(--aero-blue);
+}
+
+header a {
+  text-decoration: none;
+}
+
 /* STRUCTURE */
 
 table {
