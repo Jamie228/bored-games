@@ -48,6 +48,7 @@ function getDatabaseAndType(dbName) {
           `SELECT * FROM games WHERE \`type\` = "${type}"`
         );
         type_results = result;
+        populateFooterCount();
 
         /* Populate */
         var title = document.getElementById("page-title");
