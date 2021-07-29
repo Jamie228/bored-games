@@ -63,7 +63,11 @@ function getDatabaseAndType(dbName) {
             min_players.innerText = game[2];
             row.appendChild(min_players);
             var max_players = document.createElement('td');
-            max_players.innerText = game[3];
+            if(game[3]) {
+              max_players.innerText = game[3];
+            } else {
+              max_players.innerHTML = '&#8212;';
+            }
             row.appendChild(max_players);
             var length = document.createElement('td');
             length.innerText = game[4];

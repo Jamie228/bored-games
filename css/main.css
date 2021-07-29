@@ -123,6 +123,10 @@ section h2 {
   flex: 1;
 }
 
+.table {
+  overflow-x:auto; 
+}
+
 .type-wrap div {
   padding: 15px;
   text-align: center;
