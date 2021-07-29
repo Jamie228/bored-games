@@ -38,7 +38,7 @@ random_button.addEventListener("click", function () {
     //Append wrapper
     results.appendChild(game_info_div);
     //Animate
-    results.style.maxHeight = "500px";
+    results.style.maxHeight = "1000px";
     results.className = "expanded";
     //Jump
     window.location.hash = "result";
