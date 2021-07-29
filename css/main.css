@@ -193,6 +193,10 @@ footer {
   border-radius: 6px;
 }
 
+@media only screen and (max-width: 450px) {
+  #result { width: 90%; }
+}
+
 .expanded {
   transition: max-height 1s ease-in;
   background-color: var(--onyx);
