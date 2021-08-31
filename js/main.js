@@ -45,7 +45,7 @@ function getDatabaseAndType(dbName) {
         const urlParams = new URLSearchParams(queryString);
         const type = urlParams.get("type");
         var result = database.exec(
-          `SELECT * FROM games WHERE \`type\` = "${type}"`
+          `SELECT * FROM games WHERE \`type\` = "${type}" ORDER BY \`name\` DESC`
         );
         type_results = result;
         populateFooterCount();
