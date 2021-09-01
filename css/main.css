@@ -37,6 +37,10 @@ h1 {
   font-family: "Grenze Gotisch", cursive;
 }
 
+#search-form h3 {
+  text-align: center;
+}
+
 #table-title {
     text-align: center;
     font-size: 35px;
@@ -209,4 +213,26 @@ footer {
   display: block;
   margin-bottom: -5px;
   z-index: -1;
+}
+
+/* FORM */
+#search-form {
+  text-align: center;
+}
+
+#num-players {
+  padding: 15px;
+  text-align: center;
+  border: 4px solid var(--copper-red);
+  border-radius: 4px;
+  width: 10ch;
+  font-size: larger;
+}
+
+#time {
+  padding: 15px;
+  text-align: center;
+  border: 4px solid var(--copper-red);
+  border-radius: 4px;
+  font-size: larger;
 }
