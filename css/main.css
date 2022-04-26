@@ -171,6 +171,21 @@ footer {
 
 /* BUTTONS */
 
+#search-btn {
+  text-align:center;
+  background-color: var(--copper-red);
+  color:black;
+  border:none;
+  width:35%;
+  padding:15px;
+  font-size: 18px;
+  border-radius: 45px;
+}
+
+#search-btn:hover {
+  cursor: pointer;
+}
+
 .random-button {
   text-align: center;
   background-color: var(--copper-red);
@@ -218,6 +233,17 @@ footer {
 /* FORM */
 #search-form {
   text-align: center;
+  border: 4px solid var(--copper-red);
+  background-color: #a8ebd6;
+  border-radius: 4px;
+  padding: 15px;
+  width:60%;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width:800px) {
+  #search-form {width:80%}
+  #search-btn {width:80%}
 }
 
 #num-players {

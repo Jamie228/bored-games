@@ -53,33 +53,35 @@
     <section>
         <h2>Looking for Something More Specific?</h2>
         <div id="search-form">
-            <form action="">
+            <form action="search.html">
             <div class="form-tab">
-                <h3>How Many People Are Playing?</h3>
-                <input type="number" name="" id="num-players" min="1" max="36" value="1">
+                <h3 style="margin-top: 10px;">How Many People Are Playing?</h3>
+                <input type="number" name="num-players" id="num-players" min="1" max="36" value="1">
             </div>
             <div class="form-tab">
                 <h3>What Types of Game Would You Like to Play?</h3>
                 <label for="board">Board</label>
-                <input type="checkbox" name="board" id="board">
-                <label for="">Card</label>
-                <input type="checkbox" name="" id="">
-                <label for="">Party</label>
-                <input type="checkbox">
+                <input type="checkbox" class="type-checkbox" name="board" id="board">
+                <label for="card">Card</label>
+                <input type="checkbox" class="type-checkbox" name="card" id="card">
+                <label for="party">Party</label>
+                <input type="checkbox" id="party" class="type-checkbox" name="party">
                 <br>
-                <label for="">Physical</label>
-                <input type="checkbox" name="" id="">
-                <label for="">Quiz</label>
-                <input type="checkbox" name="" id="">
+                <label for="physical">Physical</label>
+                <input type="checkbox" class="type-checkbox" name="physical" id="physical">
+                <label for="quiz">Quiz</label>
+                <input type="checkbox" class="type-checkbox" name="quiz" id="quiz">
             </div>
             <div class="form-tab">
                 <h3>How Much Time Do You Have?</h3>
-                <select name="" id="time">
-                    <option value="">A Little</option>
-                    <option value="">About an Hour</option>
-                    <option value="">Lots of Time</option>
+                <select name="time" id="time">
+                    <option value="little">A Little</option>
+                    <option value="hour">About an Hour</option>
+                    <option value="lots">Lots of Time</option>
                 </select>
             </div>
+            <br>
+            <button class="hvr-grow" type="submit" id="search-btn"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
             </form>
         </div>
     </section>
