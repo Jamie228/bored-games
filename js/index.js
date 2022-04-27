@@ -47,11 +47,17 @@ random_button.addEventListener("click", function () {
 
 function searchFormSubmit(event) {
   event.preventDefault();
+
+  var query_string = "";
+
   let num_players = document.getElementById('num-players');
   let num_players_val = num_players.value;
+  query_string += "players=" + num_players_val;
 
   let time = document.getElementById('time');
   let time_val = time.options[time.selectedIndex].value;
+  query_string += "&time=" + time_val;
+  console.log(query_string);
 
   let checkboxes = document.getElementsByClassName('type-checkbox');
   let selected_types = [];
