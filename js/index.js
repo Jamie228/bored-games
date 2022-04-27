@@ -44,3 +44,23 @@ random_button.addEventListener("click", function () {
     window.location.hash = "result";
   }
 });
+
+function searchFormSubmit(event) {
+  event.preventDefault();
+  let num_players = document.getElementById('num-players');
+  let num_players_val = num_players.value;
+
+  let time = document.getElementById('time');
+  let time_val = time.options[time.selectedIndex].value;
+
+  let checkboxes = document.getElementsByClassName('type-checkbox');
+  let selected_types = [];
+
+  for (let index = 0; index < checkboxes.length; index++) {
+    const element = checkboxes[index];
+    if (element.checked) {
+      selected_types.push(element.value);
+    }
+  }
+
+}

@@ -53,7 +53,7 @@
     <section>
         <h2>Looking for Something More Specific?</h2>
         <div id="search-form">
-            <form action="search.html">
+            <form onsubmit="searchFormSubmit(event)">
             <div class="form-tab">
                 <h3 style="margin-top: 10px;">How Many People Are Playing?</h3>
                 <input type="number" name="num-players" id="num-players" min="1" max="36" value="1">
@@ -61,16 +61,16 @@
             <div class="form-tab">
                 <h3>What Types of Game Would You Like to Play?</h3>
                 <label for="board">Board</label>
-                <input type="checkbox" class="type-checkbox" name="board" id="board">
+                <input type="checkbox" class="type-checkbox" name="type[]" id="board" value="board">
                 <label for="card">Card</label>
-                <input type="checkbox" class="type-checkbox" name="card" id="card">
+                <input type="checkbox" class="type-checkbox" name="type[]" id="card" value="card">
                 <label for="party">Party</label>
-                <input type="checkbox" id="party" class="type-checkbox" name="party">
+                <input type="checkbox" id="party" class="type-checkbox" name="type[]" value="party">
                 <br>
                 <label for="physical">Physical</label>
-                <input type="checkbox" class="type-checkbox" name="physical" id="physical">
+                <input type="checkbox" class="type-checkbox" name="type[]" id="physical" value="physical">
                 <label for="quiz">Quiz</label>
-                <input type="checkbox" class="type-checkbox" name="quiz" id="quiz">
+                <input type="checkbox" class="type-checkbox" name="type[]" id="quiz" value="quiz">
             </div>
             <div class="form-tab">
                 <h3>How Much Time Do You Have?</h3>
