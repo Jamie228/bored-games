@@ -46,7 +46,7 @@ random_button.addEventListener("click", function () {
 });
 
 function searchFormSubmit(event) {
-  event.preventDefault();
+  //event.preventDefault();
 
   var query_string = "";
 
